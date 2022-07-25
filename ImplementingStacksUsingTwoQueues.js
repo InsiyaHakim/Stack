@@ -54,7 +54,6 @@ class Stack{
         this.queue.enqueue(value);
 
         while (size){
-            debugger;
             this.queue.enqueue(this.queue.dequeue());
             size--;
         }
