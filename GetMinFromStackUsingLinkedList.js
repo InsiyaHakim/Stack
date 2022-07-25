@@ -15,7 +15,7 @@ class Stack{
         this.tailOfMinValueStack = null;
     }
 
-    push(value){
+    push(value){//0(1)
         if(!value) return value;
 
         let newNode = new Node(value);
@@ -50,7 +50,7 @@ class Stack{
         this.size++;
     }
 
-    pop(){
+    pop(){//0(1)
         //deleting value from stack
         let newHead = this.head.next;
         let deletedValue = this.head.value;
@@ -69,11 +69,11 @@ class Stack{
         return `${deletedValue} ${deletedMinValue}`;
     }
 
-    getMin(){return this.headOfMinValueStack.value;}
+    getMin(){return this.headOfMinValueStack.value;}//0(1)
 
-    top(){return this.head.value;}
+    top(){return this.head.value;}//0(1)
 
-    isEmpty(){return this.size === 0;}
+    isEmpty(){return this.size === 0;}//0(1)
 }
 
 const stack = new Stack();
