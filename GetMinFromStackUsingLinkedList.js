@@ -15,6 +15,8 @@ class Stack{
         this.tailOfMinValueStack = null;
     }
 
+
+
     push(value){//0(1)
         if(!value) return value;
 
@@ -49,6 +51,8 @@ class Stack{
         }
         this.size++;
     }
+
+
 
     pop(){//0(1)
         //deleting value from stack
